@@ -11,7 +11,7 @@
 
         <div class="col-md-6">
             <p class="header">Your wishlists ({{wishcount}})</p>
-            <p class="wlist-item" *ngFor="let wish of wishes; let i=index" (click)="remove(i)">{{wish}}</p>
+            <p class="wlist-item" *ngFor="let wish of wishes; let i=index" (click)="remove(wish.key)">{{wish.item}}</p>
         </div>
     </div>
 
