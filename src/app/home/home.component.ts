@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.afd.database.ref("wishlist").on("value", snapshot => {
       this.wishes = this.snapshotToArray(snapshot);
-      console.log(this.wishes);
+      // console.log(this.wishes);
     });
   }
 
